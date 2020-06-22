@@ -1,0 +1,96 @@
+.card{
+    padding-bottom: 1rem;
+    margin-bottom:2rem;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cf{
+    -webkit-font-smoothing: antialiased;
+text-align: left;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+vertical-align: baseline;
+background: transparent;
+cursor: pointer;
+text-decoration: none;
+background-color: transparent;
+zoom: 1;
+white-space: nowrap;
+text-shadow: 1px 1px 0px #FFF;
+font: normal 13px Arial;
+color: #333;
+display: inline-block;
+}
+
+.source-label{
+    -webkit-font-smoothing: antialiased;
+text-align: left;
+white-space: nowrap;
+text-shadow: 1px 1px 0px #FFF;
+font: normal 13px Arial;
+color: #333;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+cursor: pointer;
+/* display: block; */
+}
+
+.source-link{
+    -webkit-font-smoothing: antialiased;
+text-align: left;
+white-space: nowrap;
+text-shadow: 1px 1px 0px #FFF;
+font: normal 13px Arial;
+color: #333;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+/* vertical-align: baseline; */
+background: transparent;
+cursor: pointer;
+display: block;
+margin-top: 5px;
+}
+
+.source-link span{
+    -webkit-font-smoothing: antialiased;
+text-align: left;
+white-space: nowrap;
+text-shadow: 1px 1px 0px #FFF;
+font: normal 13px Arial;
+color: #333;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+cursor: pointer;
+text-decoration: underline;
+}
+
+
+@media (min-width:768px){
+    /* img{
+        height:30rem;
+    } */
+    .card{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
