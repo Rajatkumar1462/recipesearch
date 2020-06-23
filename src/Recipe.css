@@ -1,8 +1,30 @@
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8395A7; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #616C6F; 
+}
+
 .card{
     padding-bottom: 1rem;
     margin-bottom:2rem;
-    margin-left: 20px;
-    margin-right: 20px;
+    background-color: #EAF0F1;
 }
 
 .cf{
@@ -82,15 +104,4 @@ vertical-align: baseline;
 background: transparent;
 cursor: pointer;
 text-decoration: underline;
-}
-
-
-@media (min-width:768px){
-    /* img{
-        height:30rem;
-    } */
-    .card{
-        margin-left: 0;
-        margin-right: 0;
-    }
 }

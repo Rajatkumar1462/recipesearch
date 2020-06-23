@@ -33,17 +33,35 @@ const getRecipes = async () => {
   }
 
   return (
-    <div className="App container">
-      <form onSubmit={getSearch} className="search-form row">
-        <input placeholder="Search here..." className="search-bar form-control col-9" type="text" value={search} onChange={updateSeach}/>
+    <div className="App">
+    <div className="form-header">
+    <div className="container">
+    <div className="row">
+      <div className="col-md-6 d-flex flex-column justify-content-center">
+      <h1>Recipe Finder</h1>
+      <p>Delicious recipes waiting for you...</p>
+      </div>
+      <div className="col-md-6 headerimage"><img src='/img-logo.webp' alt=""/></div>
+    </div>
+    </div>
+    </div>
+    <div className="form-area">
+      <form onSubmit={getSearch} className="search-form row d-flex flex-column align-items-center justify-content-center">
+      <div class="d-flex justify-content-center align-items-center mt-2">
+        <input placeholder="Search Recipe here..." className="search-bar form-control col-9" type="text" value={search} onChange={updateSeach}/>
+        </div>
         <button className="search-button btn btn-primary col-1" type="submit">Search</button>
       </form>
-      <div className="container"> 
-      {recipes.map(recipe => ( 
-        <Recipe key={recipe.recipe.image} title={recipe.recipe.label} calories={recipe.recipe.calories} 
-         image={recipe.recipe.image} source={recipe.recipe.source} url = {recipe.recipe.shareAs}
-        />
-      ))}
+      </div>
+      
+      <div className="forbgcolor">
+          <div className="container recipes-container align-items-center"> 
+          {recipes.map(recipe => ( 
+            <Recipe key={recipe.recipe.image} title={recipe.recipe.label} calories={recipe.recipe.calories} 
+             image={recipe.recipe.image} source={recipe.recipe.source} url = {recipe.recipe.shareAs}
+            />
+          ))}
+          </div>
       </div>
     </div>
   );
